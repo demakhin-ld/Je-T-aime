@@ -1,0 +1,11 @@
+
+// Стили шапки сайта// Базовые общие стили
+@import "~normalize.css/normalize";
+@import "smart-grid.scss";
+
+@import "base/_vars.scss";
+@import "base/_general.scss";
+@import "../modules/font-awesome/scss/font-awesome.scss";
+
+@import "_header.scss";
+@import "mainPage/start_Scren.scss";

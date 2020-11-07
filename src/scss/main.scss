@@ -1,41 +1,50 @@
-// Базовые общие стили
-@import "~normalize.css/normalize";
+
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
-@import "smart-grid.scss";
+@import "template/flex_btn.scss";
 
 
 @import "base/_fonts.scss";
 @import "base/_vars.scss";
-@import "../modules/font-awesome/scss/font-awesome.scss";
-@import "template/flex_btn.scss";
-@import "base/_general.scss";
 @import "base/_fuction.scss";
 @import "base/_ui_kit.scss";
 
 
 
+// Стили главной страницы сайта
+@import "mainPage/galeryScren.scss";
+@import "mainPage/advScren.scss";
+@import "mainPage/formSection.scss";
+
+
+// стили других страниц
+@import "otherPage/404.scss";
+
 @import "callBack.scss";
 @import "otherPage/modal_thanks.scss";
 
-// Стили шапки сайта
-@import "_header.scss";
 
 // Стили подвала сайта
 @import "_footer.scss";
 
-// Стили главной страницы сайта
-@import "mainPage/main_startScren.scss";
-@import "mainPage/advantagesSection.scss";
-@import "mainPage/formSection.scss";
-@import "mainPage/partnersSlide.scss";
 
-
-// стили других страниц
-@import "otherPage/delivery.scss";
-@import "otherPage/catalog.scss";
-@import "otherPage/about.scss";
-@import "otherPage/404.scss";
-
-
-
-
+// 2020
+// 2560x1440    1.11%
+// 1920x1080    16.29%
+// 1680x1050    1.87%
+// 1600x900   3.93%
+// 1536x864    5.84%
+// 1440x900  2.90%
+// 1366x768   13.51%
+// 1360x768    0.99%
+// 1280x1024    10.00%
+// 1280x800    1.76%
+// 1280x720    2.02%
+// 1024x768    1.56%
+// 768x1024    2.10%
+// 412x892    1.34%
+// 393x851    1.64%
+// 375x667    1.53%
+// 360x780    2.17%
+// 360x720   2.40%
+// 360x760    1.72%
+// 360x640   4.62%

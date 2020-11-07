@@ -65,15 +65,15 @@ function html() {
 //////// img
 function img() {
 	return gulp.src('./src/img/**/*')
-	.pipe(gulpIF(minImg,imagemin([
-    imagemin.gifsicle({interlaced: true}),
-    imagemin.mozjpeg({quality: 75, progressive: true}),
-    imagemin.optipng({optimizationLevel: 5}),
-    imagemin.svgo({
-        plugins: [
-					{removeViewBox: true},
-					{cleanupIDs: false}
-        ]
+		.pipe(gulpIF(minImg, imagemin([
+			imagemin.gifsicle({ interlaced: true }),
+			imagemin.mozjpeg({ quality: 75, progressive: true }),
+			imagemin.optipng({ optimizationLevel: 5 }),
+			imagemin.svgo({
+				plugins: [
+					{ removeViewBox: true },
+					{ cleanupIDs: false }
+				]
 			})
 		])))
 		// // .pipe($.cache($.imagemin())) // optimize images before converting
@@ -96,6 +96,21 @@ function fonts() {
 
 function styles() {
 	return gulp.src('./src/scss/main.scss')
+		.pipe(gulpIF(isMap, sourcemaps.init()))
+		.pipe(sass({
+			importer: tildeImporter
+		}).on('error', sass.logError))
+		.pipe(gulpIF(isCross, autoprefixer()))
+		//.pipe(gulpIF(isGcmq,gcmq()))
+		.pipe(gulpIF(isClean, cleanCSS({
+			level: 1
+		})))
+		.pipe(gulpIF(isMap, sourcemaps.write('.')))
+		.pipe(gulp.dest('./build/css'))
+		.pipe(gulpIF(isSync, browserSync.stream()));
+}
+function critStyle() {
+	return gulp.src('./src/scss/critical.scss')
 		.pipe(gulpIF(isMap, sourcemaps.init()))
 		.pipe(sass({
 			importer: tildeImporter
@@ -147,6 +162,7 @@ function watch() {
 		});
 	}
 	gulp.watch('./src/scss/**/*.scss', styles);
+	gulp.watch('./src/scss/**/*.scss', critStyle);
 	gulp.watch('./src/js/**/*.js', scripts);
 	gulp.watch('./src/img/**/*', img);
 	gulp.watch('./src/**/*.html', html);
@@ -161,7 +177,7 @@ function watch() {
 //////////////////////////// Задачи ////////////////////////////
 
 
-let build = gulp.parallel(html, styles, scripts, img, fonts, mod);
+let build = gulp.parallel(html, styles, critStyle, scripts, img, fonts, mod);
 let buildWidhClean = gulp.series(clean, build);
 let dev = gulp.series(buildWidhClean, watch);
 
