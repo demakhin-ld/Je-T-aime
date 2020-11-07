@@ -1,0 +1,57 @@
+.page404{
+
+	.block404 {
+		max-width: 1360px;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 100px;
+		@media (max-width: 1020px){
+		justify-content: center;
+		}
+	}
+
+	.blockLeft{
+		width: 45%;
+		@media (max-width: 1020px){
+			width: 100%;
+			order: 2;
+		}
+	}
+	.img404text {
+		margin-bottom: 40px;
+		margin-top: 50px;
+		
+	}
+	.textarea {
+		margin-bottom: 25px;
+	//	width: 45%;
+	font-family: Dewi;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 150%;
+	color: #EBEBEB;
+	p{
+		font-family: inherit;
+		font-size: inherit;
+		line-height: 150%;
+	}
+	}
+	.flexBtn {
+		margin: 25px 0;
+		//width: 45%;
+			.link {
+				width: 285px;
+		}
+	}
+
+	.gif404 {
+		align-self: flex-end;
+		width: 45%;
+		@media (max-width: 1020px){
+			width: 90%;
+			
+		}
+	}
+
+}

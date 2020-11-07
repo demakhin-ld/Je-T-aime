@@ -1,0 +1,7 @@
+//соцсети
+@each $bg_img in 'fb', 'ins', 'vk', 'youtube', 'twitter' 'be' {
+  .#{$bg_img} {
+    background-image: url('../img/social/#{$bg_img}.png');
+  }
+}
+

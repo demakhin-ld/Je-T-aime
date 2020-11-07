@@ -1,0 +1,70 @@
+.thanks {
+  background: #112123;
+  padding: 45px;
+
+  .wrap{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 540px;
+  }
+  
+
+  &__title {
+    
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 120%;
+    color: #EBEBEB;
+    margin-bottom: 70px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    @media (max-width: 767px){
+      font-size: 18px;
+    }
+  }
+
+  &__oks {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    width: 100%;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  &__buttonBlock{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+   
+
+  .flex__btn {
+
+  //min-width: 100%;
+  //width: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -10px;
+  margin-right: -10px;
+    .link {
+      width: 246px;
+      margin: 10px;
+    }
+  }
+}
+
+
+

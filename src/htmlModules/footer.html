@@ -1,0 +1,64 @@
+
+
+
+  </main>
+  <footer>
+    <section class="footerTop">
+      <div class="leftBlock">
+        <a href="" class="logoBotLink">
+          <img src="img/logoBot.png"alt="" class="logoBot">
+        </a>
+        <a href="mailto:info@smartchips.ru" class="mail"><img class="icon" src="img/icon/mail.png" alt="">info@smartchips.ru</a>
+        <a href="contacts.html" class="adress"><img class="icon" src="img/icon/location.png" alt="">117447, г. Москва, Севастопольский пр-т, д. 20Б</a>
+      </div>
+      <ul class="footerMenu">
+        <li><a href="index.html" class="navMenu__link">Главная</a></li>
+        <li><a href="contacts.html" class="navMenu__link">Контакты и реквизиты</a></li>
+        <li><a href="catalog.html" class="navMenu__link">Каталог</a></li>
+        <li><a href="about.html" class="navMenu__link">Компания</a></li>
+        <li><a href="delivery.html" class="navMenu__link">Доставка</a></li>
+        <!-- <li><a href="delivery.html" class="navMenu__link">Сертификаты</a></li> -->
+      </ul>
+      <div class="footerCall">
+        <div class="flexBtn">
+          <a href="javascript:;" class="link callBackBtn">Обратный звонок</a>
+        </div>
+        <a href="tel:+74956644906" class="call"><img class="icon" src="img/icon/phone.png" alt="">+7 (495) 664-49-06</a>
+        <span>Звонок по России бесплатный</span>
+      </div>
+    </section>
+    <section class="footerBot">
+      <span class="com">2020  С  SmartChips | All Rights Reserved</span>
+      <a href="/politik.html" class="politica">Политика конфиденциальности</a>
+      <a href="/soglasie.html" class="soglasie">Соглаcие на обработку персональных данных</a>
+    </section>
+  </footer>
+
+  <form style="display: none;" class="formCallBack" id="CB_Short">
+    <h2 class="formCallBack__title">Мы свяжемся с вами</h2>
+    <div class="blockInputs">
+      <input type="hidden" value="Popup форма" name="name_form">
+      <input type="text" name="name" placeholder="Имя" required >
+      <input type="tel" name="tel" placeholder="Телефон" required >
+      <input type="email" name="email" placeholder="E-mail" >
+    </div>
+    <div class="blockButton">
+      <div class="flexBtn">
+        <button class="link"><span class="">Отправить заявку</span></button>
+      </div>
+      <div class="privacy">Отправляя запрос, вы соглашаетесь  с <a href="/politik.html">Политикой конфиденциальности</a></div>
+    </div>
+  </form>
+
+
+  //= js.html
+  <script src="js/main.js"></script>
+    <script>
+    // маска телефона
+    let inputs = document.querySelectorAll('input[type="tel"]');
+    let im = new Inputmask('+7 (999) 999-99-99');
+    im.mask(inputs);
+  </script>
+  </body>
+</html>
+

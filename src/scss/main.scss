@@ -1,0 +1,41 @@
+// Базовые общие стили
+@import "~normalize.css/normalize";
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@import "smart-grid.scss";
+
+
+@import "base/_fonts.scss";
+@import "base/_vars.scss";
+@import "../modules/font-awesome/scss/font-awesome.scss";
+@import "template/flex_btn.scss";
+@import "base/_general.scss";
+@import "base/_fuction.scss";
+@import "base/_ui_kit.scss";
+
+
+
+@import "callBack.scss";
+@import "otherPage/modal_thanks.scss";
+
+// Стили шапки сайта
+@import "_header.scss";
+
+// Стили подвала сайта
+@import "_footer.scss";
+
+// Стили главной страницы сайта
+@import "mainPage/main_startScren.scss";
+@import "mainPage/advantagesSection.scss";
+@import "mainPage/formSection.scss";
+@import "mainPage/partnersSlide.scss";
+
+
+// стили других страниц
+@import "otherPage/delivery.scss";
+@import "otherPage/catalog.scss";
+@import "otherPage/about.scss";
+@import "otherPage/404.scss";
+
+
+
+

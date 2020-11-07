@@ -1,0 +1,84 @@
+.formCallBack{
+  width: 100%;
+  background: #112123;
+ 
+  padding-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  max-width: 768px;
+
+  &__title {
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 120%;
+    color: #EBEBEB;
+    margin-bottom: 27px;
+    margin-top: 36px;
+    text-align: center;
+    @media screen and (max-width: 760px){
+      font-size: 18px;
+    }
+  }
+
+  .blockInputs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    justify-content: center;
+    input{
+      max-width: 374px;
+      width: 100%;
+      height: 45px;
+      margin: 20px 0;
+      padding-left: 15px;
+      box-sizing: border-box;
+      border: none;
+      background: #F2FEF9;
+      &:focus::placeholder {
+        font-size: 12px; /* Размер шрифта */
+        transform: translateY(-12px); /* Сдвигаем вверх */
+        transition: .5s;
+      }
+    }
+  }
+
+  .blockButton {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+   
+    margin-top: 30px;
+    .flexBtn{
+      width: fit-content;
+      height: fit-content;
+      .link{
+        width: 275px;
+      }
+     
+    }
+  }
+  .privacy {
+    color: #C5C6C6;
+      font-size: 14px;
+      line-height: 160%;
+      margin: 0 20px;
+      max-width: 266px;
+      margin-top: 15px;
+    a{
+      font-size: inherit;
+      // text-decoration: underline;
+    }
+  }
+}
+
+
+
+
+
+

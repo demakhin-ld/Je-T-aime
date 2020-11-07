@@ -1,0 +1,62 @@
+.advantagesSection{
+  .row{
+    flex-wrap: nowrap;
+    @include sm(flex-wrap, wrap);
+    justify-content: center;
+  }
+
+  .imgBox {
+    @include col();
+    @include size(6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //@include size-lg(4);
+    @include size-sm(12);
+    
+  }
+
+  .advantagesMain {
+    @include col();
+    @include size(6);
+    background: #112123;
+    border-radius: 0px 5px 5px 0px;
+    height: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 760px;
+   // min-width: 430px;
+    padding: 20px 10px 35px 20px;
+    margin-right: auto;
+    //@include size-lg(8);
+    @include size-sm(12);
+
+  }
+  .advantage {
+    display: flex;
+    align-items: center;
+    width: 468px;
+  
+      &__number {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 87.2px;
+        line-height: 87px;
+        background: linear-gradient(92.25deg, #0C3E29 0%, #248054 69.79%, #0C3E29 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent;
+        text-shadow: 0px 0px 32.0588px rgba(64, 156, 112, 0.1), 1.28235px 1.28235px 2.56471px rgba(0, 25, 2, 0.65), 0px 5.12941px 17.9529px rgba(13, 132, 83, 0.2), 0px 19.2353px 57.7059px rgba(25, 145, 94, 0.22);
+        min-width: 52px;
+      }
+  
+      &__description {
+        font-size: 20px;
+        line-height: 150%;
+        max-width: 380px;
+        padding-left: 35px;
+        @include md(font-size, 16px);
+      }
+  }
+}

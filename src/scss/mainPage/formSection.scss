@@ -1,0 +1,87 @@
+.formSection{
+
+  .form{
+    width: 100%;
+    background-color: #112123;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    
+  &__title{
+    margin-left: 50px;
+    color: #F2FEF9;
+    margin-bottom: 40px;
+    max-width: 750px;
+  }
+  
+}
+  .callBacBlock {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .inputBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 30px;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+
+    input, textarea{
+      width: 100%;
+      margin: 17px 0;
+      padding: 13px 20px;
+      box-sizing: border-box;
+      background: #F2FEF9;
+      border: 1px solid #637375;
+      box-shadow: 0px 12px 35px rgba(255, 255, 255, 0.15), 0px 5px 6px rgba(0, 0, 1, 0.8), inset 6px 6px 15px rgba(79, 95, 97, 0.3);
+      border-radius: 5px;
+      @include xs (font-size, 14px);
+      &:focus::placeholder {
+        font-size: 12px; /* Размер шрифта */
+        transform: translateY(-13px); /* Сдвигаем вверх */
+        transition: .5s;
+      }
+    }
+    textarea{
+      resize: none;
+      height: 127px;
+    }
+    .comment{
+      position: absolute;
+      bottom: -20px;
+      left: 35px;
+      font-size: 14px;
+      line-height: 160%;
+      color: #A3A3A3;
+    }
+  }
+  .btnBlock {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 42px;
+
+    .flexBtn {
+      margin-bottom: 15px;
+      .link{
+        width: 303px;
+      }
+      
+    }
+    .privacy {
+      color: #C5C6C6;
+      font-size: 14px;
+      line-height: 160%;
+      margin: 0 20px;
+      max-width: 266px;
+    }
+
+  }
+  
+
+}

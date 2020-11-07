@@ -1,0 +1,167 @@
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+p{
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-align: inherit;
+}
+
+body.lock{
+  overflow: hidden;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 160%;
+  width: 100%;
+  @media (max-width: 1023px) {font-size: 24px;}
+	
+}
+
+h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 130%;
+  @media (max-width: $break_md){font-size: 30px;}
+  @media (max-width: $break_sm){font-size: 18px;}
+}
+
+h3{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 160%;
+  @media (max-width: $break_md){font-size: 26px;}
+  @media (max-width: $break_sm){font-size: 22px;}
+}
+h4{
+  font-family: Montserrat;
+	font-size: 22px;
+  line-height: 32px;
+  @media (max-width: $break_md){font-size: 18px; line-height: 125%;}
+  @media (max-width: $break_sm){font-size: 18px; line-height: 32px;}
+}
+
+section {
+  width: 100%;
+}
+
+div, p, h1, h2, h3, h4, h5, h6 {
+  word-break: break-word;
+}
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+}
+.wrapper{
+  box-sizing: border-box;
+  @include wrapper();
+  // @media (max-width: $break_sm) {
+	// 	margin: 0 -5px;
+	// }
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a{
+	text-decoration: none;
+}
+
+main{
+	width: 100%;
+  margin: 0;
+  margin-top: 87px;
+  @media (max-width: 1023px) {
+    margin-top: 75px;
+  }
+  @media (max-width: 767px) {
+    margin-top : 55px;
+  }
+}
+
+input{
+	color: #000;
+}
+
+input, button, textarea, input:active, input:focus { outline: none; }
+
+.breadCrumbs {
+  padding: 15px 0;
+  font-size: 13px;
+  line-height: 120%;
+  color: #A0A6A7;
+  background: #162628;
+  span {
+    margin: 0 5px;
+    color: inherit;
+  }
+  &--activeEl {
+    color: #A0A6A7;
+    transition: none;
+    &:hover{
+      color: #A0A6A7;
+      transition: none;
+    }
+  }
+}
+
+
+.logoLink {
+  width: 140px;
+  .logo {
+    display: none;
+  }
+  @media (max-width: 1023px) {
+    width: 70px;
+    padding-left: 7px;
+    .logo {
+      display: unset;
+    }
+    .logoBig {
+      display: none;
+    }
+  }
+}
+
+.politik{
+  &__title{
+    padding-top: 50px;
+  }
+  &__textarea{
+  padding: 50px 100px;
+  color: #A0A6A7;
+  @include lg(padding, 30px 70px);
+  @include md(padding, 20px 10px);
+  p{
+    padding-bottom: 20px;
+  }
+}
+}
