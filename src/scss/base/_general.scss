@@ -12,45 +12,45 @@ p{
   font-weight: inherit;
   font-style: inherit;
   text-align: inherit;
+  line-height: inherit;
 }
 
 body.lock{
   overflow: hidden;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
+  line-height: 120%;
+  text-transform: uppercase;
+}
+div, h1, h2, h3, h4, h5, h6 {
+  word-break: break-word;
   font-family: Forum;
   font-style: normal;
   font-weight: normal;
-  font-size: 50px;
-  line-height: 120%;
   color: #FFFFFF;
-  text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  font-size: 130px;
+  text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.28);
   @media (max-width: 1023px) {font-size: 24px;}
-	
 }
 
 h2 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 130%;
+  font-size: 50px;
+  // text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
   @media (max-width: $break_md){font-size: 30px;}
   @media (max-width: $break_sm){font-size: 18px;}
 }
 
 h3{
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
   font-size: 30px;
   line-height: 160%;
   @media (max-width: $break_md){font-size: 26px;}
   @media (max-width: $break_sm){font-size: 22px;}
 }
 h4{
-  font-family: Montserrat;
 	font-size: 22px;
   line-height: 32px;
   @media (max-width: $break_md){font-size: 18px; line-height: 125%;}
@@ -59,11 +59,9 @@ h4{
 
 section {
   width: 100%;
+  padding-top: 77px;
 }
 
-div, p, h1, h2, h3, h4, h5, h6 {
-  word-break: break-word;
-}
 
 
 
@@ -78,7 +76,6 @@ div, p, h1, h2, h3, h4, h5, h6 {
 .wrapper{
   box-sizing: border-box;
   @include wrapper();
-  
 }
 
 li {
