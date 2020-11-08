@@ -80,6 +80,9 @@ window.onload = function () {
       loop: true,
       margin: 10,
       nav: false,
+      autoplay: true,
+      autoplayTimeout: 3500,
+      autoplayHoverPause: true,
       responsive: {
         0: {
           items: 1
