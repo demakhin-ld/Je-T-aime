@@ -22,10 +22,10 @@ body.lock{
 h1, h2, h3, h4, h5, h6 {
   line-height: 120%;
   text-transform: uppercase;
+  font-family: Forum;
 }
 div, h1, h2, h3, h4, h5, h6 {
   word-break: break-word;
-  
   font-style: normal;
   font-weight: normal;
  
@@ -64,17 +64,6 @@ section {
   padding-top: 77px;
 }
 
-
-
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  margin: 0 auto;
-  max-width: 1920px;
-  width: 100%;
-}
 .wrapper{
   box-sizing: border-box;
   @include wrapper();
@@ -97,13 +86,6 @@ a{
 main{
 	width: 100%;
   margin: 0;
-  margin-top: 87px;
-  @media (max-width: 1023px) {
-    margin-top: 75px;
-  }
-  @media (max-width: 767px) {
-    margin-top : 55px;
-  }
 }
 
 input{
