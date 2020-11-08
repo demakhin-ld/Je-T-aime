@@ -1,15 +1,15 @@
 
 
 window.onload = function () {
-  let burgerMobile = document.querySelector('.burgerBtn');
-  let menuContainer = document.querySelector('.mobile');
+  // let burgerMobile = document.querySelector('.burgerBtn');
+  // let menuContainer = document.querySelector('.mobile');
 
-  function openMenuMObile() {
-    menuContainer.classList.toggle("mobile--open");
-    burgerMobile.classList.toggle("burgerBtn--activated");
-  }
+  // function openMenuMObile() {
+  //   menuContainer.classList.toggle("mobile--open");
+  //   burgerMobile.classList.toggle("burgerBtn--activated");
+  // }
 
-  burgerMobile.onclick = openMenuMObile;
+  // burgerMobile.onclick = openMenuMObile;
 
   $(".callBackBtn").on('click', function () {
     $.fancybox.open({
@@ -94,6 +94,13 @@ $(document).ready(function () {
       }
     }
 
+  });
+});
+
+$(document).ready(function() {
+  $('.header__burger').click(function(event) {
+    $('.header__burger, .header__menu').toggleClass('active');
+    $('body').toggleClass('lock')
   });
 });
 
