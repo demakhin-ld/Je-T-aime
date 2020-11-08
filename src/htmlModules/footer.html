@@ -1,38 +1,94 @@
+</main>
+<footer class="footer">
+  <div class="row">
+    <div class="blokContent">
+      <h2 class="footer__title">будем рады принять вас</h2>
+      <div class="contacts row">
+        <div class="adressCol col">
+          <div class="contacts__title">Адрес:</div>
+          <div class="link adress">г. Липецк, ул. Циолковского, 38 А</div>
+        </div>
+        <div class="contact col">
+          <div class="contacts__title">Как с нами связаться:</div>
+          <ul class="phone">
+            <li><a href="" class="link">8 (930) 014 40 24</a></li>
+            <li><a href="" class="link">8 (930) 014 40 24</a></li>
+            <li><a href="" class="link">8 (930) 014 40 24</a></li>
+          </ul>
+          <ul class="mail">
+            <li><a href="" class=" link">ghotem48@mail.ru</a></li>
+          </ul>
 
-
-
-  </main>
-  <!-- <footer>
-
-  </footer> -->
-
-  <form style="display: none;" class="formCallBack" id="CB_Short">
-    <h2 class="formCallBack__title">Мы свяжемся с вами</h2>
-    <div class="blockInputs">
-      <input type="hidden" value="Popup форма" name="name_form">
-      <input type="text" name="name" placeholder="Имя" required >
-      <input type="tel" name="tel" placeholder="Телефон" required >
-      <input type="email" name="email" placeholder="E-mail" >
-    </div>
-    <div class="blockButton">
-      <div class="flexBtn">
-        <button class="link"><span class="">Отправить заявку</span></button>
+        </div>
       </div>
-      <div class="privacy">Отправляя запрос, вы соглашаетесь  с <a href="/politik.html">Политикой конфиденциальности</a></div>
+      <div class="formBlock row">
+        <form class="formCallBack col" id="CB_Short">
+          <h2 class="formCallBack__title">Оставить заявку на бронь:</h2>
+          <div class="blockInputs">
+            <input type="hidden" value="footer форма" name="name_form">
+            <input type="text" name="people" placeholder="гости" required>
+            <input type="" name="data" placeholder="дата" required>
+
+          </div>
+          <div class="blockButton">
+            <div class="flexBtn">
+              <button class="link"><span class="">Отправить заявку</span></button>
+            </div>
+
+          </div>
+        </form>
+        <div class="info col">
+          <div class="openingHours">
+            <div class="openingHours__text">Часы работы:</div>
+            <ul class="clock">
+              <li>пн-вс: 15:00 - 04:00</li>
+            </ul>
+          </div>
+          <div class="social">
+            <div class="social__text">Следите за нами в соцсетях:</div>
+            <a href="" class="link"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+            <a href="" class="link"><i class="fa fa-vk fa-3x" aria-hidden="true"></i></a>
+            <a href="" class="link"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
-  </form>
+    <div class="blokMap">
+      <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A907df6f138dccfb5387243624e9e5574611af4f0b68b1f91c4aa1f5206012d5d&amp;width=1189&amp;height=720&amp;lang=ru_RU&amp;scroll=true">
+      </script>
+    </div>
+  </div>
+</footer>
+
+<form style="display: none;" class="formCallBack" id="CB_Short">
+  <h2 class="formCallBack__title">Мы свяжемся с вами</h2>
+  <div class="blockInputs">
+    <input type="hidden" value="Popup форма" name="name_form">
+    <input type="text" name="name" placeholder="Имя" required>
+    <input type="tel" name="tel" placeholder="Телефон" required>
+    <input type="email" name="email" placeholder="E-mail">
+  </div>
+  <div class="blockButton">
+    <div class="flexBtn">
+      <button class="link"><span class="">Отправить заявку</span></button>
+    </div>
+    <div class="privacy">Отправляя запрос, вы соглашаетесь с <a href="/politik.html">Политикой конфиденциальности</a>
+    </div>
+  </div>
+</form>
 
 
-  //= css.html
-  <link rel="stylesheet" href="css/main.css">
-  //= js.html
-  <script src="js/main.js"></script>
-    <script>
-    // маска телефона
-    let inputs = document.querySelectorAll('input[type="tel"]');
-    let im = new Inputmask('+7 (999) 999-99-99');
-    im.mask(inputs);
-  </script>
-  </body>
+//= css.html
+<link rel="stylesheet" href="css/main.css">
+//= js.html
+<script src="js/main.js"></script>
+<script>
+  // маска телефона
+  let inputs = document.querySelectorAll('input[type="tel"]');
+  let im = new Inputmask('+7 (999) 999-99-99');
+  im.mask(inputs);
+</script>
+</body>
+
 </html>
-

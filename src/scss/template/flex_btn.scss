@@ -1,51 +1,11 @@
 $tr-on: .5s;
-$b-r: 5px;
-$btn_bg: linear-gradient(92.25deg, #0C3E29 0%, #046034 69.79%, #0C3E29 100%);
-$bg_activ: linear-gradient(92.25deg, #164833 0%, #1AB069 69.79%, #164833 100%);
+$b-r: 0px;
+$btn_bg: #CB76C2;
+$bg_activ: #2D0629;
 $btn_text: #fff;
-$box-shadow: 0px 0px 25px rgba(64, 156, 112, 0.1), 1px 1px 2px rgba(0, 25, 2, 0.65), 0px 4px 14px rgba(13, 132, 83, 0.2), 0px 15px 45px rgba(25, 145, 94, 0.22), inset 1px 1px 1px rgba(255, 255, 255, 0.15);;
+$box-shadow: 0 ;
 
-// .flexBtn {
-//   .link {
-//     transition: $trb;
-//     border: none;
-//     font-size: 15px;
-//     font-weight: 600;
-//     line-height: 18px;
-//     letter-spacing: 0.02em;
-//     padding: 21px 63px;
-//     text-transform: uppercase;
-//     transition: $tr-on;
-//     // border: 2px solid $btn_bg;
-//     background: $btn_bg;
-//     color: $btn_text;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     padding-top: 18px;
-//     padding-bottom: 19px;
-//     box-shadow: $box-shadow;
-//     border-radius: $b-r;
 
-//     svg,
-//       path {
-//         transition: $trb;
-//         fill: $btn_text;
-//       }
-
-//     &:hover {
-//       transition: $trb;
-//       color:  $btn_bg;
-//       background: transparent;
-//       svg,
-//       path {
-//         transition: $trb;
-//         fill: $btn_bg;
-//       }
-//     }
-//   }
-  
-// }
 
 .flexBtn {
   display: flex;
@@ -61,8 +21,8 @@ $box-shadow: 0px 0px 25px rgba(64, 156, 112, 0.1), 1px 1px 2px rgba(0, 25, 2, 0.
     text-transform: uppercase;
     text-align: center;
     transition: $tr-on;
-    border: 1px solid #0C3E29;
-    border-radius: 5px;
+    border: 1px solid #CB76C2;
+    border-radius: $b-r;
     box-shadow: $box-shadow;
     background: $btn_bg;
     color:  $btn_text;

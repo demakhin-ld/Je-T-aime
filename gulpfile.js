@@ -101,7 +101,7 @@ function styles() {
 			importer: tildeImporter
 		}).on('error', sass.logError))
 		.pipe(gulpIF(isCross, autoprefixer()))
-		//.pipe(gulpIF(isGcmq,gcmq()))
+		.pipe(gulpIF(isGcmq,gcmq()))
 		.pipe(gulpIF(isClean, cleanCSS({
 			level: 1
 		})))
@@ -116,7 +116,7 @@ function critStyle() {
 			importer: tildeImporter
 		}).on('error', sass.logError))
 		.pipe(gulpIF(isCross, autoprefixer()))
-		//.pipe(gulpIF(isGcmq,gcmq()))
+		.pipe(gulpIF(isGcmq,gcmq()))
 		.pipe(gulpIF(isClean, cleanCSS({
 			level: 1
 		})))
@@ -131,13 +131,17 @@ function critStyle() {
 
 function scripts() {
 	return gulp.src('./src/js/main.js')
-		.pipe(rigger())
-		//.pipe(gulpIF(isMap,sourcemaps.init()))
-		//.pipe(concat('main.js'))
-		// .pipe(gulpIF(isClean,uglify()))
-		//.pipe(gulpIF(isMap,sourcemaps.write()))
-		.pipe(gulp.dest('./build/js'))
-		.pipe(gulpIF(isSync, browserSync.stream()));
+	.pipe(rigger())
+	.pipe(gulpIF(isMap,sourcemaps.init()))
+	// .pipe(gulpIF(isClean,babel({
+	// 	presets: ['env']  // presets: ['@babel/env']  должно быть так, но это не работает
+	// 	})))
+	.pipe(concat('main.js'))
+	// .pipe(gulpIF(isClean,uglify()))
+	.pipe(gulpIF(isMap,sourcemaps.write()))
+	
+	.pipe(gulp.dest('./build/js'))
+	.pipe(gulpIF(isSync,browserSync.stream()));
 }
 
 //////////////////////////// -- Компиляция JS -- ////////////////////////////
