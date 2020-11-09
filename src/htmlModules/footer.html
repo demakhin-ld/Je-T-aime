@@ -1,7 +1,7 @@
 </main>
 <footer class="footer">
   <div class="row">
-    <div class="blokContent">
+    <div class="blokContent" id="contact">
       <h2 class="footer__title">будем рады принять вас</h2>
       <div class="contacts row">
         <div class="adressCol col">
@@ -26,8 +26,10 @@
           <h2 class="formCallBack__title">Оставить заявку на бронь:</h2>
           <div class="blockInputs">
             <input type="hidden" value="footer форма" name="name_form">
-            <input type="text" name="people" placeholder="гости" required>
-            <input type="" name="data" placeholder="дата" required>
+            <label for="people">Примерное количество человек</label>
+            <input type="text" name="people" id="people" placeholder="" required>
+            <label for="data">Дата бронирования</label>
+            <input type="date" name="data" id="data" placeholder="" required>
 
           </div>
           <div class="blockButton">
@@ -46,16 +48,16 @@
           </div>
           <div class="social">
             <div class="social__text">Следите за нами в соцсетях:</div>
-            <a href="" class="link"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
-            <a href="" class="link"><i class="fa fa-vk fa-3x" aria-hidden="true"></i></a>
-            <a href="" class="link"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+            <a href="" class="link"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            <a href="" class="link"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
+            <a href="" class="link"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
     </div>
     <div class="blokMap">
       <script type="text/javascript" charset="utf-8" async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A907df6f138dccfb5387243624e9e5574611af4f0b68b1f91c4aa1f5206012d5d&amp;width=1189&amp;height=720&amp;lang=ru_RU&amp;scroll=true">
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A907df6f138dccfb5387243624e9e5574611af4f0b68b1f91c4aa1f5206012d5d&amp;width=100%&amp;height=720&amp;lang=ru_RU&amp;scroll=true">
       </script>
     </div>
   </div>

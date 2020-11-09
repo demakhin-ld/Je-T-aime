@@ -1,73 +1,85 @@
 .footer {
 
-  &__title {
-  }
+  &__title {}
 
   .row {
     // padding: 0;
   }
+
   .col {
     @include col();
   }
+
   .blokContent {
     @include col();
     @include size(6);
     @include size-md(12);
     padding: 0 50px;
+    @include md(padding, 0 15px);
   }
+
   .contacts {
     justify-content: space-between;
 
     &__title {
       font-weight: bold;
-font-size: 28px;
-line-height: 120%;
-padding-bottom: 18px;
-width: 100%;
+      font-size: 28px;
+      line-height: 120%;
+      padding-bottom: 18px;
+      width: 100%;
+      padding-top: 20px;
+      @include sm(font-size, 20px);
     }
   }
-  .adressCol {
-  }
-  
+
+  .adressCol {}
+
   .link {
     font-size: 16px;
     line-height: 120%;
-    
+
   }
+
   .adress {
     position: relative;
     padding: 0 25px;
-    &::before{
-      content:'\f041';
+
+    &::before {
+      content: '\f041';
       font-family: FontAwesome;
       position: absolute;
       left: 0;
       color: #CB76C2;
     }
   }
+
   .contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 500px;
   }
-  .phone{
+
+  .phone {
     position: relative;
     padding: 0 25px;
-    &::before {
-    content: '\f095';
-    font-family: FontAwesome;
-    position: absolute;
-    left: 0;
-    color: #CB76C2;
 
+    &::before {
+      content: '\f095';
+      font-family: FontAwesome;
+      position: absolute;
+      left: 0;
+      color: #CB76C2;
+
+    }
   }
-  }
+
   .mail {
     position: relative;
     padding: 0 25px;
-    &::before{
-      content:'\f0e0';
+
+    &::before {
+      content: '\f0e0';
       font-family: FontAwesome;
       position: absolute;
       left: 0;
@@ -76,71 +88,111 @@ width: 100%;
       font-size: 16px;
     }
   }
-  .formBlock {
-  }
+
+  .formBlock {}
+
   .formCallBack {
-    width: fit-content;
+    // width: fit-content;
+    // max-width: 70%;
+    // @include size(8);
+    // max-width: 450px;
+    justify-content: center;
+    padding-bottom: 25px;
+    flex: 1 0 450px;
+    @include xs(flex, 1 0 250px);
 
 
     &__title {
+      font-family: Roboto Condensed;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 120%;
+      @include sm(font-size, 20px);
     }
+
     .blockInputs {
-      input{
+      input {
         max-width: 400px;
+
+      }
+
+      label {
+        max-width: 400px;
+        margin-bottom: -15px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 120%;
+        color: #919191;
+
       }
     }
-    .blockButton {
-    }
-    .flexBtn {
-    }
+
+    .blockButton {}
+
+    .flexBtn {}
   }
+
   .info {
     align-self: flex-end;
-    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: flex-end;
+    justify-content: center;
+    flex: 1 0 230px;
+    @include sm(order, -1);
+
   }
 
   .openingHours {
-    padding: 30px 0;
-    
+    padding: 15px 0;
+    min-width: 191px;
 
-  
-      &__text {
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 120%;
-        color: #E1E1E1;
-      }
+
+    &__text {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 120%;
+      color: #E1E1E1;
+    }
   }
+
   .clock {
     position: relative;
     padding: 0 25px;
     font-size: 16px;
-    &::before{
-      content:'\f017';
+
+    &::before {
+      content: '\f017';
       font-family: FontAwesome;
       position: absolute;
       left: 0;
       top: 2px;
       color: #CB76C2;
-      
+
     }
   }
+
   .social {
-    padding: 30px 0;
-    
-  
-      &__text {
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 120%;
-        color: #E1E1E1;
-      }
+    padding: 15px 0;
+    min-width: 191px;
+
+
+    &__text {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 120%;
+      color: #E1E1E1;
+    }
   }
+
   .link {
-    .fa{padding: 15px;}
-    
+    .fa {
+      padding: 15px;
+    }
+
   }
-  
+
   .blokMap {
     @include col();
     @include size(6);
