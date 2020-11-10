@@ -1,14 +1,125 @@
+.startScren {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+
+  &__title {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 130px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.28);
+    margin: 5px 0;
+    @include md(font-size, 45px);
+  }
+
+  .wrapper {
+    padding: 0;
+    height: 100%;
 
 
-.startScren{
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 100vh;
-width: 100%;
- 
+  }
+
+  .row {
+    max-width: 1750px;
+    margin-left: auto;
+    padding: 0;
+    align-items: center;
+    height: 100%;
+    @include sm-block{
+      height: auto;
+      
+    }
+  }
+
+  .titleArea {
+    @include col();
+    flex-grow: 10;
+    align-self: center;
+    @include size-sm(12);
+  }
+
+  .menuDw {
+    position: relative;
+    &::before{
+      background-image: url('../img/icon/arrow_right.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 50px;
+      height: 20px;
+      background-color: brown;
+      position: absolute;
+    }
+  }
+
+  .advantages {
+    @include col();
+    align-self: stretch;
+    flex: 1 0 390px;
+    padding: 20px 15px 20px 44px;
+    background: rgba(45, 6, 41, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    &__item {
+      padding-bottom: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      // width: 100%;
+
+      
+    }
+
+    &__num {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 120%;
+      color: #FFFFFF;
+      padding-bottom: 20px;
+
+    }
+
+    &__subtitle {
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 120%;
+      color: #FFFFFF;
+      padding-bottom: 15px;
+      
+    }
+
+    &__text {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 180%;
+      color: #FFFFFF;
+      max-width: 220px;
+    }
+  }
+
+  .item {
+    
+  }
+
+  .subscription {
+    padding-bottom: 15px;
+    font-size: 14px;
+line-height: 150%;
+color: #FFFFFF;
+  }
+
+  .link {
+    margin-right: 28px;
+    font-size: 14px;
+line-height: 150%;
+// color: #AFAFAF;
+  }
+
 }
-
-
-  
-

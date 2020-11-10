@@ -62,6 +62,7 @@ h4{
 section {
   width: 100%;
   padding-top: 77px;
+  @include md(padding-top, 50px);
 }
 
 .wrapper{
